@@ -17,7 +17,7 @@ License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
 # Source0-md5:	9cd05eaaeee03eb54e38de337355f094
-URL:		http://www.kde.org/
+URL:		https://www.kde.org/
 BuildRequires:	Qt6DBus-devel >= %{qtver}
 %{?with_tests:BuildRequires:	Qt6Test-devel >= %{qtver}}
 BuildRequires:	cmake >= 3.16
