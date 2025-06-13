@@ -6,17 +6,17 @@
 # - runtime Requires if any
 # - make test not hanging and switch it back on
 
-%define		kdeframever	6.14
+%define		kdeframever	6.15
 %define		qtver		5.15.2
 %define		kfname		kdbusaddons
 Summary:	Convenience classes for DBus
 Name:		kf6-%{kfname}
-Version:	6.14.0
+Version:	6.15.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	174b64417eddd97bcf954ebad7e3c784
+# Source0-md5:	060f28c494d49e1c242f90f4c1b1802d
 URL:		https://www.kde.org/
 BuildRequires:	Qt6DBus-devel >= %{qtver}
 %{?with_tests:BuildRequires:	Qt6Test-devel >= %{qtver}}
