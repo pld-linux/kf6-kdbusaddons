@@ -6,17 +6,17 @@
 # - runtime Requires if any
 # - make test not hanging and switch it back on
 
-%define		kdeframever	6.18
+%define		kdeframever	6.19
 %define		qtver		5.15.2
 %define		kfname		kdbusaddons
 Summary:	Convenience classes for DBus
 Name:		kf6-%{kfname}
-Version:	6.18.0
+Version:	6.19.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	ac0b8fd29766af617e264b423c5afe10
+# Source0-md5:	d3069e2b6b82124cc283883b84a4270f
 URL:		https://www.kde.org/
 BuildRequires:	Qt6DBus-devel >= %{qtver}
 %{?with_tests:BuildRequires:	Qt6Test-devel >= %{qtver}}
@@ -84,7 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc MAINTAINER README.md
 %attr(755,root,root) %{_bindir}/kquitapp6
-%attr(755,root,root) %{_libdir}/libKF6DBusAddons.so.*.*.*
+%{_libdir}/libKF6DBusAddons.so.*.*.*
 %ghost %{_libdir}/libKF6DBusAddons.so.6
 %{_datadir}/qlogging-categories6/kdbusaddons.categories
 %{_datadir}/qlogging-categories6/kdbusaddons.renamecategories
