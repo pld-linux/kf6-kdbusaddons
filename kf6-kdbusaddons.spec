@@ -39,6 +39,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 KDBusAddons provides convenience classes on top of QtDBus, as well as
 an API to create KDED modules.
 
+%description -l pl.UTF-8
+KDBusAddons dostarcza wygodnych klas na bazie QtDBus, jak również API
+do tworzenia modułów KDED.
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
